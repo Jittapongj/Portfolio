@@ -1,5 +1,6 @@
 import profileImg from '../assets/images/Jittapong.jpg'
 import '../styles/home.scss'
+import '../styles/ui/button.scss'
 
 function Home() {
     return (
@@ -17,6 +18,11 @@ function Home() {
                     development, and creative thinking skills. I am determined to use my acquired skills to develop my
                     computer career and am committed to continuously developing myself so that this career can progress
                     steadily and sustainably.</p>
+                <div class="actions flex justify-center flex-wrap">
+                    <div className='btn-about'>About</div>
+                    <div className='btn-project'>Projects</div>
+                    <div className='btn-contact'>Contact</div>
+                </div>
             </div>
         </section>
     )

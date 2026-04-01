@@ -1,0 +1,20 @@
+@mixin circle-btn($color) {
+    background-color: $color;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.15);
+    }
+}
