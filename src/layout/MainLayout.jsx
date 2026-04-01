@@ -7,7 +7,7 @@ function MainLayout() {
     <section id='Main-Layout'>
         <Nav></Nav>
         <Home></Home>
-        <Project></Project>
+        {/* <Project></Project> */}
     </section>
   )
 }
