@@ -37,3 +37,27 @@
         }
     }
 }
+
+@media (min-width: 640px) {
+    #homepage {
+        padding: 2rem 4rem;
+        .profile {
+            width: 20rem;
+        }
+
+        .content-info {
+            margin-left: 2rem;
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.875rem;
+            }
+        }
+    }
+}
