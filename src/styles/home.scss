@@ -1,10 +1,10 @@
 #homepage {
-    padding: 2.5rem 3.75rem;
-    gap: 2.5rem;
+    padding: 2rem;
+    gap: 2rem;
 
     .profile {
         border-radius: 50%;
-        width: 20rem;
+        width: 12rem;
         height: auto;
         box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
         flex-shrink: 0;
@@ -12,6 +12,57 @@
         .profile-image {
             width: 100%;
             height: 100%;
+        }
+    }
+
+    .content-info {
+        max-width: 600px;
+        text-align: justify;
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            text-indent: 30px;
+            color: #555;
+        }
+    }
+
+    .actions {
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (min-width: 640px) {
+    #homepage {
+        padding: 2rem 4rem;
+        .profile {
+            width: 20rem;
+        }
+
+        .content-info {
+            margin-left: 2rem;
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.875rem;
+            }
         }
     }
 }

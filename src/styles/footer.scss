@@ -1,0 +1,20 @@
+#Footer {
+    background-color: white;
+    padding: 1.25rem 2.5rem;
+    border-top: 1px solid #ccc;
+    font-size: 1rem;
+    color: #666;
+    gap: 10px;
+
+    .footer-info {
+        div {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
