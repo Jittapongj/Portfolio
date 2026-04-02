@@ -1,17 +1,17 @@
 import { useState } from 'react'
 import Nav from '../components/Nav'
 import Home from '../pages/home'
+import About from '../pages/about'
 import Project from '../pages/project'
 import Footer from '../components/Footer'
 
 function MainLayout() {
   const [activePage, setActivePage] = useState('home');
 
-  // ใช้ Object Mapping เพื่อจัดการการแสดงผลหน้าต่างๆ
   const renderContent = () => {
     const pages = {
       home: <Home setActivePage={setActivePage} />,
-      about: <div>About Page (Coming Soon)</div>,
+      about: <About />,
       projects: <Project />,
       contact: <div>Contact Page (Coming Soon)</div>
     };

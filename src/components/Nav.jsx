@@ -9,7 +9,7 @@ function Nav({ setActivePage, activePage }) {
   ];
 
   return (
-    <section id="nav" className='navbar flex flex-col sm:flex-row justify-between items-center top-0 sticky bg-white shadow-sm px-8 py-4'>
+    <section id="nav" className='navbar flex flex-col sm:flex-row gap-2 justify-between items-center top-0 sticky bg-white shadow-sm px-8 py-4'>
         <div className='logo flex items-baseline'>
             <button onClick={() => setActivePage('home')} className="name font-bold text-xl cursor-pointer">
               Jittadev
