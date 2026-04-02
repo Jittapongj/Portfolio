@@ -1,0 +1,43 @@
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    .card-image {
+        height: 200px;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+
+        .title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .des {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .readmore {
+            a {
+                background-color: #f3f3f3;
+                padding: 8px 12px;
+                border-radius: 4px;
+                text-decoration: none;
+                color: #333;
+
+                &:hover {
+                    background-color: #e0e0e0;
+                }
+            }
+        }
+    }
+}
