@@ -2,7 +2,7 @@ import profileImg from '../assets/images/Jittapong.jpg'
 import '../styles/home.scss'
 import '../styles/ui/button.scss'
 
-function Home() {
+function Home({ setActivePage }) {
     return (
         <section id="homepage" className="flex grow flex-col sm:flex-row justify-center items-center gap-8">
             <div className="profile overflow-hidden ">
@@ -18,10 +18,10 @@ function Home() {
                     development, and creative thinking skills. I am determined to use my acquired skills to develop my
                     computer career and am committed to continuously developing myself so that this career can progress
                     steadily and sustainably.</p>
-                <div class="actions flex justify-center flex-wrap">
-                    <div className='btn-about'>About</div>
-                    <div className='btn-project'>Projects</div>
-                    <div className='btn-contact'>Contact</div>
+                <div className="actions flex justify-center flex-wrap">
+                    <button onClick={() => setActivePage('about')} className='btn-about'>About</button>
+                    <button onClick={() => setActivePage('projects')} className='btn-project'>Projects</button>
+                    <button onClick={() => setActivePage('contact')} className='btn-contact'>Contact</button>
                 </div>
             </div>
         </section>
