@@ -1,8 +1,7 @@
 // src/components/ui/card.jsx
 import '../../styles/ui/card.scss';
 
-// เราจะรับ Props: title (ชื่อ), description (รายละเอียดยาวๆ), image (รูป), and tags (เทคโนโลยีที่ใช้ - ถ้ามี)
-const ProjectCard = ({ title, description, image, gitUrl }) => {
+export const ProjectCard = ({ title, description, image, gitUrl }) => {
     return (
         <div className="card card-project flex flex-col h-full">
             <div className="card-image relative group overflow-hidden">
@@ -23,4 +22,28 @@ const ProjectCard = ({ title, description, image, gitUrl }) => {
     );
 };
 
-export default ProjectCard;
+export const ContactCard = ({ label, value, icon, link }) => {
+    const CardContent = (
+        <div className="card card-contact flex items-center p-4 gap-3">
+            <div className="card-icon flex items-center justify-center shrink-0">
+                <img src={icon} alt={label} className="w-8 h-8 object-contain" />
+            </div>
+            <div className="card-info flex flex-col min-w-0">
+                <span className="card-label uppercase mb-1">
+                    {label}
+                </span>
+                <span className="card-value">
+                    {value}
+                </span>
+            </div>
+        </div>
+    );
+
+    return link ? (
+        <a href={link} target="_blank" rel="noopener noreferrer" className="block">
+            {CardContent}
+        </a>
+    ) : (
+        CardContent
+    );
+};

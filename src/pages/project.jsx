@@ -1,5 +1,5 @@
-import ProjectCard from '../components/ui/card';
-import { projectData } from '../data/projects'; 
+import { ProjectCard } from '../components/ui/card';
+import { projectData } from '../data/projects';
 
 const Projects = () => {
   return (
@@ -10,9 +10,9 @@ const Projects = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projectData.map((project) => (
-            <ProjectCard 
-              key={project.id} 
-              title={project.title} 
+            <ProjectCard
+              key={project.id}
+              title={project.title}
               description={project.description}
               image={project.image}
               gitUrl={project.gitUrl}

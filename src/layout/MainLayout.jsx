@@ -3,6 +3,7 @@ import Nav from '../components/Nav'
 import Home from '../pages/home'
 import About from '../pages/about'
 import Project from '../pages/project'
+import Contact from '../pages/contact'
 import Footer from '../components/Footer'
 
 function MainLayout() {
@@ -13,7 +14,7 @@ function MainLayout() {
       home: <Home setActivePage={setActivePage} />,
       about: <About />,
       projects: <Project />,
-      contact: <div>Contact Page (Coming Soon)</div>
+      contact: <Contact />
     };
     return pages[activePage] || <Home setActivePage={setActivePage} />;
   };
