@@ -3,7 +3,7 @@ import { projectData } from '../data/projects';
 
 const Projects = () => {
   return (
-    <section className="py-16 bg-gray-50 min-h-screen">
+    <section className="py-8 min-h-screen">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-gray-900 mb-4"> My Projects </h2>
