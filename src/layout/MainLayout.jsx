@@ -7,8 +7,8 @@ function MainLayout() {
   return (
     <section id='Main-Layout' className='flex flex-col min-h-screen'>
         <Nav></Nav>
-        <Home></Home>
-        {/* <Project></Project> */}
+        {/* <Home></Home> */}
+        <Project></Project>
         <Footer></Footer>
     </section>
   )
