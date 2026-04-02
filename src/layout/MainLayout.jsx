@@ -10,11 +10,12 @@ function MainLayout() {
   // ใช้ Object Mapping เพื่อจัดการการแสดงผลหน้าต่างๆ
   const renderContent = () => {
     const pages = {
-      home: <Home />,
+      home: <Home setActivePage={setActivePage} />,
+      about: <div>About Page (Coming Soon)</div>,
       projects: <Project />,
       contact: <div>Contact Page (Coming Soon)</div>
     };
-    return pages[activePage] || <Home />;
+    return pages[activePage] || <Home setActivePage={setActivePage} />;
   };
 
   return (
