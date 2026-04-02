@@ -5,13 +5,13 @@
     z-index: 999;
 
     .logo {
-        
         a {
             font-size: 1.5rem;
             font-weight: bold;
             color: #333;
             cursor: pointer;
         }
+
         p {
             font-size: 1rem;
             color: #666;
@@ -27,7 +27,11 @@
             cursor: pointer;
 
             &:hover {
-                color: #000;
+                color: #99CCEE;
+            }
+
+            &.active {
+                color: #99CCEE;
             }
         }
     }

@@ -9,7 +9,7 @@ const ProjectCard = ({ title, description, image, gitUrl }) => {
                 <img src={image} alt={title} className="w-full h-full object-cover" />
                 <div className="absolute"></div>
             </div>
-            <div className="card-body p-5 flex flex-col flex-grow">
+            <div className="card-body p-5 flex flex-col grow">
                 <h3 className="title text-xl font-bold" title={title}>{title}</h3>
                 <p className="des text-sm mb-4 line-clamp-3">{description}</p>
                 <div className="readmore flex justify-end items-center gap-3 mt-auto pt-4 border-t border-gray-100">
