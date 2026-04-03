@@ -1,0 +1,58 @@
+.post {
+    .post-wrapper {
+        background-color: white;
+        border-radius: 0.75rem;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+
+        .post-image {
+            border-radius: 0.75rem;
+        }
+
+        .post-body {
+            padding: 2rem;
+
+            .title {
+                font-size: 1.875rem;
+                font-weight: 800;
+                color: #111827;
+            }
+
+            .overview {
+                font-size: 1.25rem;
+                font-weight: 600;
+                color: #111827;
+            }
+
+            .description {
+                font-size: 1rem;
+                color: #4b5563;
+                margin-top: 1rem;
+                line-height: 1.6;
+            }
+
+            .tech-stack {
+                .tool {
+                    padding: 0.375rem 0.75rem;
+                    background-color: #f3f4f6;
+                    color: #374151;
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    border-radius: 9999px;
+                }
+            }
+
+            .project-structure {
+                font-size: 1.25rem;
+                font-weight: 600;
+                color: #111827;
+            }
+
+            .no-structure {
+                background-color: #f9fafb;
+                border: 1px solid #e5e7eb;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+}

@@ -18,6 +18,14 @@
         }
     }
 
+    &-back {
+        background-color: transparent;
+        color: #333;
+        position: absolute;
+        left: -16rem;
+        cursor: pointer;
+    }
+
     &-about {
         @include circle-btn(#ffc107);
     }
@@ -39,6 +47,19 @@
 
         &:hover {
             background-color: #e2e6ea;
+        }
+    }
+
+    &-github {
+        background-color: #333;
+        color: white;
+        border: 1px solid #ddd;
+        border-radius: 0.5rem;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #555;
         }
     }
 }

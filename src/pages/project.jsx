@@ -12,12 +12,11 @@ const Projects = () => {
   return (
     <section className="py-8 min-h-screen">
       {selectedProject ? (
-        <Post 
-          project={selectedProject} 
+        <Post
+          project={selectedProject}
           onBack={() => setSelectedProject(null)}
         />
       ) : (
-        /* ถ้าไม่มี ให้แสดงหน้ารวมโปรเจกต์ปกติ */
         <div className="container mx-auto px-4 animate-fade-in">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-extrabold text-gray-900 mb-4"> My Projects </h2>
@@ -28,9 +27,9 @@ const Projects = () => {
                 key={project.id}
                 title={project.title}
                 description={project.description}
-                image={project.image || PlaceholderImage} 
+                image={project.image || PlaceholderImage}
                 gitUrl={project.gitUrl}
-                onReadMore={() => setSelectedProject(project)} 
+                onReadMore={() => setSelectedProject(project)}
               />
             ))}
           </div>
