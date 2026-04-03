@@ -2,7 +2,7 @@ import '../../styles/ui/card.scss';
 import PlaceholderImage from '../../assets/images/placeholder.png';
 import GithubImage from '../../assets/images/github.png';
 
-export const ProjectCard = ({ title, description, image, gitUrl }) => {
+export const ProjectCard = ({ title, description, image, gitUrl, onReadMore }) => {
     return (
         <div className="card card-project flex flex-col h-full">
             <div className="card-image relative group overflow-hidden">
@@ -24,7 +24,12 @@ export const ProjectCard = ({ title, description, image, gitUrl }) => {
                             <img src={GithubImage} alt="GitHub" className='w-6 h-6 bg-white'/>
                         </a>
                     )}
-                    <div className="btn-readmore text-sm px-4 py-2 border border-gray-300 rounded-md"> Read More </div>
+                    <div 
+                        onClick={onReadMore} 
+                        className="readmore text-sm px-4 py-2 border border-gray-300 rounded-md cursor-pointer hover:bg-black hover:text-white transition-colors"
+                    > 
+                        Read More 
+                    </div>
                 </div>
             </div>
         </div>
