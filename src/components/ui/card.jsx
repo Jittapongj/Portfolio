@@ -1,11 +1,17 @@
-// src/components/ui/card.jsx
 import '../../styles/ui/card.scss';
+import PlaceholderImage from '../../assets/images/placeholder.png';
 
 export const ProjectCard = ({ title, description, image, gitUrl }) => {
     return (
         <div className="card card-project flex flex-col h-full">
             <div className="card-image relative group overflow-hidden">
-                <img src={image} alt={title} className="w-full h-full object-cover" />
+                <img
+                    src={image} alt={title} className="w-full h-full object-cover"
+                    onError={(e) => { 
+                        e.target.onerror = null; 
+                        e.target.src = PlaceholderImage; 
+                    }}
+                />
                 <div className="absolute"></div>
             </div>
             <div className="card-body p-5 flex flex-col grow">
