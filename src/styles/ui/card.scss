@@ -1,11 +1,12 @@
 .card {
-    background-color: #fff;
+    background-color: $White;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: $Shadow;
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 
     &-project {
+        cursor: pointer;
         .card-image {
             height: 200px;
         }
@@ -23,14 +24,19 @@
 
             .des {
                 font-size: 1rem;
-                color: #555;
+                color: $FontColor;
                 margin-bottom: 16px;
             }
         }
-
         &:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 6px 6px #99CCEE;
+            .card-body {
+                .title {
+                    background-image: linear-gradient(90deg, $PrimaryColor 20%, $SecondaryColor 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
+            }
         }
     }
 
@@ -44,19 +50,19 @@
         .card-label {
             font-size: 0.875rem;
             font-weight: bold;
-            color: #2563eb;
+            color: $SecondaryColor;
             text-transform: uppercase;
             margin-bottom: 4px;
         }
 
         .card-value {
             font-size: 1.125rem;
-            color: #333;
+            color: $FontColor;
         }
 
         &:hover {
             transform: translateY(-4px);
-            box-shadow: 0 6px 6px #99CCEE;
+            box-shadow: 0 6px 6px $PrimaryColor;
         }
     }
 }

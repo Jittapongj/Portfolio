@@ -1,20 +1,25 @@
+@use 'variables' as *;
+
 #nav {
     padding: 1.25rem 2.5rem;
-    border-bottom: 1px solid #ccc;
-    background-color: white;
+    border-bottom: 1px solid $BorderColor;
+    background-color: $text-white;
     z-index: 999;
 
     .logo {
-        a {
+        .name {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #333;
             cursor: pointer;
+            background-image: linear-gradient(90deg, $PrimaryColor 20%, $SecondaryColor 100%);
+					-webkit-background-clip: text;
+            		-webkit-text-fill-color: transparent;
+            		background-clip: text;
         }
 
         p {
             font-size: 1rem;
-            color: #666;
+            color: $FontColor;
         }
     }
 
@@ -22,16 +27,16 @@
         .nav-link {
             font-size: 1rem;
             font-weight: 500;
-            color: #555;
+            color: $FontColor;
             transition: color 0.3s ease;
             cursor: pointer;
 
             &:hover {
-                color: #99CCEE;
+                color: $PrimaryColor;
             }
 
             &.active {
-                color: #99CCEE;
+                color: $PrimaryColor;
             }
         }
     }
