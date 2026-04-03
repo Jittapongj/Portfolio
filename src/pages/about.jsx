@@ -53,16 +53,6 @@ function About() {
                 "Use SCSS, Bootstrap, JavaScript, and jQuery to create interactive components and integrate AJAX.",
                 "Prioritized Responsive Design principles for a seamless user experience across all devices."
             ]
-        },
-        {
-            date: "2020 - 2021",
-            title: "MT Electric",
-            details: "Electrician Assistant",
-            list: [
-                "Installed electrical systems in residential and commercial buildings.",
-                "Worked collaboratively and met project deadlines with high responsibility.",
-                "Adapted to changing environments and diverse working conditions."
-            ]
         }
     ];
 
