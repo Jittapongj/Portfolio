@@ -1,26 +1,28 @@
-@use '../mixins' as *;
-
 .btn {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: #fff;
+    background-color: $PrimaryColor;
+    color: $text-white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 
     &-primary {
-        background-color: #007bff;
+        background-color: $PrimaryColor;
+        text-transform: uppercase;
+        border: none;
+        color: $text-white;
 
-        &:hover {
-            background-color: #0056b3;
-        }
+        // &:hover {
+        //     color: $text-white;
+        //     //background: linear-gradient(130deg, $PrimaryColor 20%, $SecondaryColor 100%);
+        // }
     }
 
     &-back {
         background-color: transparent;
-        color: #333;
+        color: $FontColor;
         position: absolute;
         left: -16rem;
         cursor: pointer;
@@ -39,27 +41,27 @@
     }
 
     &-readmore {
-        background-color: #99CCEE;
-        color: white;
-        border: 1px solid #ddd;
+        background-color: $PrimaryColor;
+        color: $text-white;
+        border: 1px solid $BorderColor;
         text-transform: uppercase;
         cursor: pointer;
 
         &:hover {
-            background-color: #e2e6ea;
+            background-color: $PrimaryHoverColor;
         }
     }
 
     &-github {
-        background-color: #333;
-        color: white;
-        border: 1px solid #ddd;
+        background-color: $PrimaryColor;
+        color: $text-white;
+        border: 1px solid $BorderColor;
         border-radius: 0.5rem;
         text-transform: uppercase;
         cursor: pointer;
 
         &:hover {
-            background-color: #555;
+            background-color: $PrimaryHoverColor;
         }
     }
 }

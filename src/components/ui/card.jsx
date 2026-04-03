@@ -26,7 +26,7 @@ export const ProjectCard = ({ title, description, image, gitUrl, onReadMore }) =
                     )}
                     <div 
                         onClick={onReadMore} 
-                        className="readmore text-sm px-4 py-2 border border-gray-300 rounded-md cursor-pointer hover:bg-black hover:text-white transition-colors"
+                        className="btn-primary text-sm px-4 py-2 border border-gray-300 rounded-md cursor-pointer hover:bg-black hover:text-white transition-colors"
                     > 
                         Read More 
                     </div>
