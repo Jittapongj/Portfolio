@@ -1,5 +1,6 @@
 import '../../styles/ui/card.scss';
 import PlaceholderImage from '../../assets/images/placeholder.png';
+import GithubImage from '../../assets/images/github.png';
 
 export const ProjectCard = ({ title, description, image, gitUrl }) => {
     return (
@@ -19,9 +20,11 @@ export const ProjectCard = ({ title, description, image, gitUrl }) => {
                 <p className="des text-sm mb-4 line-clamp-3">{description}</p>
                 <div className="readmore flex justify-end items-center gap-3 mt-auto pt-4 border-t border-gray-100">
                     {gitUrl && (
-                        <a href={gitUrl} target="_blank" rel="noopener noreferrer" className="text-sm px-4 py-2" > Code </a>
+                        <a href={gitUrl} target="_blank" rel="noopener noreferrer" className="" >
+                            <img src={GithubImage} alt="GitHub" className='w-6 h-6 bg-white'/>
+                        </a>
                     )}
-                    <div className="readmore text-sm px-4 py-2 border border-gray-300 rounded-md"> Read More </div>
+                    <div className="btn-readmore text-sm px-4 py-2 border border-gray-300 rounded-md"> Read More </div>
                 </div>
             </div>
         </div>

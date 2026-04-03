@@ -1,4 +1,4 @@
-@import '../_mixins';
+@import '../mixins';
 
 .btn {
     display: inline-block;
@@ -28,5 +28,17 @@
 
     &-contact {
         @include circle-btn(#17a2b8);
+    }
+
+    &-readmore {
+        background-color: #99CCEE;
+        color: white;
+        border: 1px solid #ddd;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #e2e6ea;
+        }
     }
 }
