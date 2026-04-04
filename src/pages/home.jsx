@@ -9,7 +9,7 @@ function Home({ setActivePage }) {
                 <img src={profileImg} alt="Profile" className="profile-image" />
             </div>
             <div className="content-info">
-                <h1 className='flex justify-center sm:justify-start mb-4'>Jittapong Jongjai</h1>
+                <h1 className='flex justify-center sm:justify-start mb-2'>Jittapong Jongjai</h1>
                 <h3 className='flex justify-center sm:justify-start'>I'm a Front-end Developer</h3>
                 <p> Hi, I'm Jittapong Jongjai, I'm a 24-year-old Computer Engineering graduate from Rajamangala University of Technology Lanna, Chiang Mai.
                     As a Front-end Developer driven by a passion for web development, I focus on bridging the gap between design and functionality 
