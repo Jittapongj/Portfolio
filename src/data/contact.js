@@ -5,6 +5,7 @@ import githubIcon from '../assets/images/github.png';
 import linkedinIcon from '../assets/images/linkedin.png';
 import facebookIcon from '../assets/images/facebook.png';
 import instagramIcon from '../assets/images/instagram.png';
+import lineIcon from '../assets/images/line.png';
 
 export const contactData = [
     { 
@@ -56,4 +57,11 @@ export const contactData = [
         icon: instagramIcon, 
         link: "https://www.instagram.com/thiztoon" 
     },
+    { 
+        id: 8, 
+        label: "Line", 
+        value: "szrybb", 
+        icon: lineIcon, 
+        link: "https://line.me/ti/p/szrybb" 
+    }
 ];
