@@ -17,11 +17,11 @@ const Projects = () => {
           onBack={() => setSelectedProject(null)}
         />
       ) : (
-        <div className="container mx-auto px-4 animate-fade-in">
-          <div className="text-center mb-16">
+        <div className="container mx-auto animate-fade-in">
+          <div className="text-center">
             <h2 className="text-3xl font-extrabold text-gray-900 mb-4"> My Projects </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {projectData.map((project) => (
               <ProjectCard
                 key={project.id}
