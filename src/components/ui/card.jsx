@@ -38,12 +38,12 @@ export const ProjectCard = ({ title, description, image, gitUrl, onReadMore }) =
 
 export const ContactCard = ({ label, value, icon, link }) => {
     const CardContent = (
-        <div className="card card-contact flex items-center p-4 gap-3">
+        <div className="card card-contact flex items-center gap-3">
             <div className="card-icon flex items-center justify-center shrink-0">
-                <img src={icon} alt={label} className="w-8 h-8 object-contain" />
+                <img src={icon} alt={label} className="object-contain" />
             </div>
             <div className="card-info flex flex-col min-w-0">
-                <span className="card-label uppercase mb-1">
+                <span className="card-label uppercase">
                     {label}
                 </span>
                 <span className="card-value">

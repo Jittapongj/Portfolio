@@ -23,7 +23,7 @@ function MainLayout() {
   return (
     <div id='Main-Layout' className='flex flex-col min-h-screen'>
       <Nav setActivePage={setActivePage} activePage={activePage} />
-      <main className='main-content flex justify-center grow mx-auto px-8 lg:px-16 w-full'>
+      <main className='main-content flex justify-center grow mx-auto px-6 lg:px-16 w-full'>
         {renderContent()}
       </main>
       <Footer />
