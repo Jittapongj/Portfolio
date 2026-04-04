@@ -8,7 +8,7 @@ function Home({ setActivePage }) {
             <div className="profile overflow-hidden ">
                 <img src={profileImg} alt="Profile" className="profile-image" />
             </div>
-            <div class="content-info">
+            <div className="content-info">
                 <h1 className='flex justify-center mb-4'>Jittapong Jongjai</h1>
                 <h3 className='flex justify-center sm:justify-start'>About Me</h3>
                 <p>Hello, my nickname is Toon, 24 years old, currently studying in the Faculty of Engineering, Computer

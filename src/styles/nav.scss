@@ -12,9 +12,9 @@
             font-weight: bold;
             cursor: pointer;
             background-image: linear-gradient(90deg, $PrimaryColor 20%, $SecondaryColor 100%);
-					-webkit-background-clip: text;
-            		-webkit-text-fill-color: transparent;
-            		background-clip: text;
+			-webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         p {

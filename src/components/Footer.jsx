@@ -4,18 +4,18 @@ import LinkedinImg from '../assets/images/linkedin.png'
 
 function Footer() {
     return (
-        <section id="Footer" class="flex flex-wrap justify-between items-center ">
-            <div class="footer-info">
+        <section id="Footer" className="flex flex-wrap justify-between items-center ">
+            <div className="footer-info">
                 <div>Phone :</div>
-                <p class="mb-0">061-795-6385</p>
+                <p className="mb-0">061-795-6385</p>
             </div>
-            <div class="footer-info">
+            <div className="footer-info">
                 <div>Email :</div>
-                <p class="mb-0">jittapongj@gmail.com</p>
+                <p className="mb-0">jittapongj@gmail.com</p>
             </div>
-            <div class="footer-info ">
+            <div className="footer-info ">
                 <div>Follow Me :</div>
-                <div class="flex gap-4">
+                <div className="flex gap-4">
                     <a href="https://linkedin.com/in/jittapong-j" target="_blank">
                         <img src={LinkedinImg} alt="LinkedIn icon" />
                     </a>
