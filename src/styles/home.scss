@@ -20,6 +20,7 @@
             background-color: $PrimaryColor;
             border-radius: 50%;
             z-index: -10;
+            animation: pulse-ring 2s infinite;
             //background-color: $PrimaryColor;
             //background: linear-gradient(135deg, $PrimaryColor 0%, $SecondaryColor 100%);
         }
@@ -84,5 +85,26 @@
                 font-size: 1rem;
             }
         }
+    }
+}
+
+@keyframes pulse-ring {
+    0% {
+        box-shadow: 
+            0 0 0 0 rgba($PrimaryColor, 0.6),
+            0 0 0 0 rgba($PrimaryColor, 0.4),
+            0 0 0 0 rgba($PrimaryColor, 0.2);
+    }
+    70% {
+        box-shadow: 
+            0 0 0 1rem rgba($PrimaryColor, 0),
+            0 0 0 2rem rgba($PrimaryColor, 0),
+            0 0 0 3rem rgba($PrimaryColor, 0);
+    }
+    100% {
+        box-shadow: 
+            0 0 0 0 rgba($PrimaryColor, 0),
+            0 0 0 0 rgba($PrimaryColor, 0),
+            0 0 0 0 rgba($PrimaryColor, 0);
     }
 }
