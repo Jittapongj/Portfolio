@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import '../styles/main.scss'
 import Nav from '../components/Nav'
 import Home from '../pages/home'
 import About from '../pages/about'
@@ -22,7 +23,7 @@ function MainLayout() {
   return (
     <div id='Main-Layout' className='flex flex-col min-h-screen'>
       <Nav setActivePage={setActivePage} activePage={activePage} />
-      <main className='flex justify-center grow mx-auto px-16 w-full'>
+      <main className='main-content flex justify-center grow mx-auto px-8 lg:px-16 w-full'>
         {renderContent()}
       </main>
       <Footer />

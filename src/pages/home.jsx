@@ -16,16 +16,16 @@ function Home({ setActivePage }) {
                     <div>Social Media Link</div>
                     <div className="flex gap-4">
                         <a href="https://facebook.com/thiztoon" target="_blank">
-                            <img src={facebookIcon} alt="Facebook icon" className='w-7 h-7' />
+                            <img src={facebookIcon} alt="Facebook icon" className='social-icon' />
                         </a>
                         <a href="https://instagram.com/thiztoon" target="_blank">
-                            <img src={instagramIcon} alt="Instagram icon" className='w-7 h-7' />
+                            <img src={instagramIcon} alt="Instagram icon" className='social-icon' />
                         </a>
                         <a href="https://line.me/ti/p/szrybb" target="_blank">
-                            <img src={LineIcon} alt="Line icon" className='w-7 h-7' />
+                            <img src={LineIcon} alt="Line icon" className='social-icon' />
                         </a>
                         <a href="https://linkedin.com/in/jittapong-j" target="_blank">
-                            <img src={LinkedinImg} alt="LinkedIn icon" className='w-7 h-7' />
+                            <img src={LinkedinImg} alt="LinkedIn icon" className='social-icon' />
                         </a>
                     </div>
                 </div>
