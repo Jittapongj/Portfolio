@@ -8,7 +8,7 @@ import instagramIcon from '../assets/images/instagram.png';
 
 function Home({ setActivePage }) {
     return (
-        <section id="homepage" className="grid grid-cols-1 sm:grid-cols-2 items-center grow w-full">
+        <section id="homepage" className="grid grid-cols-1 sm:grid-cols-2 items-center grow w-full animate-fade-in"> 
             <div className="profile relative flex justify-center mx-auto">
                 <div className="profile-bg absolute"></div>
                 <img src={profileImg} alt="Profile" className="profile-image relative" />
