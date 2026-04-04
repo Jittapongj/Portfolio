@@ -1,14 +1,20 @@
 .card {
     background-color: $White;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     box-shadow: $Shadow;
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 
     &-project {
         cursor: pointer;
+        border-radius: 1rem;
         .card-image {
-            height: 200px;
+            height: auto;
+
+            img {
+                padding: 1rem;
+                border-radius: 1.75rem;
+            }
         }
 
         .card-body {
@@ -17,17 +23,20 @@
             padding: 16px;
 
             .title {
-                font-size: 1.25rem;
+                text-align: center;
+                font-size: 1.125rem;
                 font-weight: bold;
                 margin-bottom: 8px;
             }
 
             .des {
-                font-size: 1rem;
+                text-align: center;
+                font-size: 0.938rem;
                 color: $FontColor;
                 margin-bottom: 16px;
             }
         }
+
         &:hover {
             .card-body {
                 .title {
@@ -41,28 +50,49 @@
     }
 
     &-contact {
-
+        padding: 0.5rem 1rem;
         .card-icon {
-            width: 40px;
-            height: 40px;
+            width: 1.625rem;
+            height: 1.625rem;
         }
 
         .card-label {
-            font-size: 0.875rem;
+            font-size: 0.75rem;
             font-weight: bold;
             color: $SecondaryColor;
             text-transform: uppercase;
-            margin-bottom: 4px;
         }
 
         .card-value {
-            font-size: 1.125rem;
+            font-size: 0.9381rem;
             color: $FontColor;
         }
 
         &:hover {
             transform: translateY(-4px);
             box-shadow: 0 6px 6px $PrimaryColor;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        &-contact {
+            padding: 1rem 2rem;
+            .card-icon {
+                width: 1.75rem;
+                height: 1.75rem;
+            }
+
+            .card-label {
+                font-size: 0.75rem;
+                margin-bottom: 4px;
+                margin-bottom: 0.25rem;
+            }
+
+            .card-value {
+                font-size: 1rem;
+            }
         }
     }
 }

@@ -15,7 +15,7 @@ const ResumeSection = ({ title, children }) => (
 );
 
 const ResumeItem = ({ date, title, details, list = [] }) => (
-    <div className="item flex items-start col-12 mb-5">
+    <div className="item flex items-start flex-col md:flex-row col-12 mb-5">
         <div className="item-date col-3" style={{ minWidth: '120px' }}>{date}</div>
         <div className="item-text col-9">
             <p className="item-title fw-bold">{title}</p>
@@ -38,7 +38,7 @@ function About() {
         },
         {
             date: "2020 - 2021",
-            title: "High Vocational Certificate 1–2",
+            title: "High Vocational Certificate",
             details: "Electrical Control | Lampang Technical College (GPA: 3.91)"
         }
     ];
@@ -57,7 +57,7 @@ function About() {
     ];
 
     return (
-        <section id='about' className="content-resume container py-5">
+        <section id='about' className="content-resume container animate-fade-in py-5">
             <h1 className='flex justify-center'>Resume</h1>
 
             <ResumeSection title="Education">

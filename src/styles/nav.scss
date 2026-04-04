@@ -12,14 +12,9 @@
             font-weight: bold;
             cursor: pointer;
             background-image: linear-gradient(90deg, $PrimaryColor 20%, $SecondaryColor 100%);
-					-webkit-background-clip: text;
-            		-webkit-text-fill-color: transparent;
-            		background-clip: text;
-        }
-
-        p {
-            font-size: 1rem;
-            color: $FontColor;
+			-webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
     }
 
@@ -31,12 +26,28 @@
             transition: color 0.3s ease;
             cursor: pointer;
 
+            &:after {
+                content: '';
+                position: absolute;
+                top: 1.75rem;
+                display: block;
+                width: 1.5rem;
+                height: 2px;
+                background-color: transparent;
+                margin: 0 auto;
+                transition: background-color 0.3s ease;
+            }
+
             &:hover {
                 color: $PrimaryColor;
             }
 
             &.active {
                 color: $PrimaryColor;
+
+                &:after {
+                    background-color: $PrimaryColor;
+                }
             }
         }
     }

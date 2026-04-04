@@ -1,38 +1,66 @@
 #homepage {
-    padding: 2rem;
-    gap: 2rem;
-
+    padding: 1rem 0;
     .profile {
-        border-radius: 50%;
-        width: 12rem;
+        margin-top: 1rem;
+        //border-radius: 50%;
+        //width: 20rem;
         height: auto;
-        box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+        //box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
         flex-shrink: 0;
 
         .profile-image {
-            width: 100%;
-            height: 100%;
+            top: -2.5rem;
+            width: 80%;
+            height: 80%;
+            z-index: 10;
+        }
+
+        .profile-bg {
+            aspect-ratio: 1 / 1;
+            bottom: 0;
+            width: 70%;
+            background-color: $PrimaryColor;
+            border-radius: 50%;
+            z-index: -10;
+            animation: pulse-ring 2s infinite;
+        }
+
+        .box-social-link {
+            background-color: $White;
+            color: $FontColor;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            bottom: -2rem;
+            z-index: 11;
+
+            .social-icon {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
         }
     }
 
     .content-info {
         max-width: 600px;
-        text-align: justify;
+        text-align: center;
+        margin-top: 2.5rem;
+
         h1 {
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 700;
         }
 
         h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
+            color: $text-grey;
+            font-size: 1.125rem;
+            font-weight: 500;
             margin-bottom: 0.5rem;
         }
 
         p {
-            font-size: 1rem;
+            font-size: 0.938rem;
             line-height: 1.5;
-            text-indent: 30px;
             color: #555;
         }
     }
@@ -45,24 +73,72 @@
 
 @media (min-width: 640px) {
     #homepage {
-        padding: 2rem 4rem;
+        padding: 6rem 0rem;
+        margin-top: 0;
         .profile {
             width: 20rem;
+
+            .profile-image {
+                top: -2.5rem;
+                width: 100%;
+                height: 100%;
+            }
+
+            .profile-bg {
+                bottom: 0;
+                width: 80%;
+            }
+
+            .box-social-link {
+                padding: 1rem 2rem;
+                bottom: -2rem;
+
+                .social-icon {
+                    width: 1.75rem;
+                    height: 1.75rem;
+                }
+            }
         }
 
         .content-info {
-            margin-left: 2rem;
+            margin: 0 2rem;
+            text-align: justify;
+
             h1 {
-                font-size: 1.5rem;
+                font-size: 1.75rem;
             }
 
             h3 {
-                font-size: 1rem;
+                font-size: 1.125rem;
             }
 
             p {
-                font-size: 0.875rem;
+                font-size: 1rem;
+                line-height: 1.6;
             }
         }
+    }
+}
+
+@keyframes pulse-ring {
+    0% {
+        box-shadow:
+            0 0 0 0 rgba($PrimaryColor, 0.6),
+            0 0 0 0 rgba($PrimaryColor, 0.4),
+            0 0 0 0 rgba($PrimaryColor, 0.2);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 1rem rgba($PrimaryColor, 0),
+            0 0 0 2rem rgba($PrimaryColor, 0),
+            0 0 0 3rem rgba($PrimaryColor, 0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba($PrimaryColor, 0),
+            0 0 0 0 rgba($PrimaryColor, 0),
+            0 0 0 0 rgba($PrimaryColor, 0);
     }
 }

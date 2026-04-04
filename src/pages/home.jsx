@@ -1,28 +1,42 @@
-import profileImg from '../assets/images/Jittapong.jpg'
+import profileImg from '../assets/images/Jittapong-removebg.png'
 import '../styles/home.scss'
 import '../styles/ui/button.scss'
+import LineIcon from '../assets/images/line.png'
+import LinkedinImg from '../assets/images/linkedin.png'
+import facebookIcon from '../assets/images/facebook.png';
+import instagramIcon from '../assets/images/instagram.png';
 
 function Home({ setActivePage }) {
     return (
-        <section id="homepage" className="flex grow flex-col sm:flex-row justify-center items-center gap-8">
-            <div className="profile overflow-hidden ">
-                <img src={profileImg} alt="Profile" className="profile-image" />
-            </div>
-            <div class="content-info">
-                <h1 className='flex justify-center mb-4'>Jittapong Jongjai</h1>
-                <h3 className='flex justify-center sm:justify-start'>About Me</h3>
-                <p>Hello, my nickname is Toon, 24 years old, currently studying in the Faculty of Engineering, Computer
-                    Science Program, Rajamangala University of Technology Lanna, Chiang Mai. I am interested in learning and
-                    developing skills in the field of Front-end Developer, especially in HTML PHP jQuery and SCSS. I have
-                    analytical,
-                    development, and creative thinking skills. I am determined to use my acquired skills to develop my
-                    computer career and am committed to continuously developing myself so that this career can progress
-                    steadily and sustainably.</p>
-                <div className="actions flex justify-center flex-wrap">
-                    <button onClick={() => setActivePage('about')} className='btn-about'>About</button>
-                    <button onClick={() => setActivePage('projects')} className='btn-project'>Projects</button>
-                    <button onClick={() => setActivePage('contact')} className='btn-contact'>Contact</button>
+        <section id="homepage" className="grid grid-cols-1 sm:grid-cols-2 items-center grow w-full animate-fade-in"> 
+            <div className="profile relative flex justify-center mx-auto">
+                <div className="profile-bg absolute"></div>
+                <img src={profileImg} alt="Profile" className="profile-image relative" />
+                <div className='box-social-link absolute flex flex-col items-center gap-2 justify-center'>
+                    <div>Social Media Link</div>
+                    <div className="flex gap-4">
+                        <a href="https://facebook.com/thiztoon" target="_blank">
+                            <img src={facebookIcon} alt="Facebook icon" className='social-icon' />
+                        </a>
+                        <a href="https://instagram.com/thiztoon" target="_blank">
+                            <img src={instagramIcon} alt="Instagram icon" className='social-icon' />
+                        </a>
+                        <a href="https://line.me/ti/p/szrybb" target="_blank">
+                            <img src={LineIcon} alt="Line icon" className='social-icon' />
+                        </a>
+                        <a href="https://linkedin.com/in/jittapong-j" target="_blank">
+                            <img src={LinkedinImg} alt="LinkedIn icon" className='social-icon' />
+                        </a>
+                    </div>
                 </div>
+            </div>
+            <div className="content-info">
+                <h1 className='flex justify-center sm:justify-start mb-2'>Jittapong Jongjai</h1>
+                <h3 className='flex justify-center sm:justify-start'>I'm a Front-end Developer</h3>
+                <p> Hi, I'm Jittapong Jongjai, I'm a 24-year-old Computer Engineering graduate from Rajamangala University of Technology Lanna, Chiang Mai.
+                    As a Front-end Developer driven by a passion for web development, I focus on bridging the gap between design and functionality
+                    through creativity and adaptability. I am committed to continuous learning and building a steady, progressive career in tech.</p>
+                <div className='btn btn-primary mt-5'>Resume</div>
             </div>
         </section>
     )
