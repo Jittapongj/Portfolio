@@ -1,4 +1,5 @@
 import '../styles/about.scss'
+import Skills from '../components/ui/skill';
 
 // สร้าง Component ย่อยเพื่อลดการเขียนโค้ดซ้ำ
 const ResumeSection = ({ title, children }) => (
@@ -76,11 +77,16 @@ function About() {
                 <div className="row">
                     <div className="col-md-6">
                         <p className="item-title fw-bold">Hard Skills</p>
-                        <p className="text-details">React, HTML, SCSS, PHP, JavaScript, jQuery, AJAX, MySQL, GitHub</p>
+                        <Skills />
                     </div>
                     <div className="col-md-6">
                         <p className="item-title fw-bold">Soft Skills</p>
-                        <p className="text-details">System Analysis, Collaboration, Creativity</p>
+                        <ul className="text-details mt-2 list-disc pl-5">
+                            <li>Collaboration</li>
+                            <li>Adaptability</li>
+                            <li>Fast Learner</li>
+                            <li>Emotional intelligence</li>
+                        </ul>
                     </div>
                 </div>
             </ResumeSection>
