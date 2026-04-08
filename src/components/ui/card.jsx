@@ -1,5 +1,5 @@
 import '../../styles/ui/card.scss';
-import PlaceholderImage from '../../assets/images/placeholder.png';
+import PlaceholderImage from '../../assets/images/projects/placeholder.png';
 
 export const ProjectCard = ({ title, description, image, onReadMore }) => {
     return (

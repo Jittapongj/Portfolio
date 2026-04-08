@@ -1,11 +1,11 @@
-import phoneIcon from '../assets/images/smartphone-call.png';
-import gmailIcon from '../assets/images/gmail.png';
-import mapIcon from '../assets/images/map.png';
-import githubIcon from '../assets/images/github.png';
-import linkedinIcon from '../assets/images/linkedin.png';
-import facebookIcon from '../assets/images/facebook.png';
-import instagramIcon from '../assets/images/instagram.png';
-import lineIcon from '../assets/images/line.png';
+import phoneIcon from '../assets/images/contacts/phone.svg';
+import gmailIcon from '../assets/images/contacts/email.svg';
+import mapIcon from '../assets/images/contacts/map.svg';
+import githubIcon from '../assets/images/contacts/github.svg';
+import linkedinIcon from '../assets/images/contacts/linkedin.svg';
+import facebookIcon from '../assets/images/contacts/facebook.svg';
+import instagramIcon from '../assets/images/contacts/instagram.svg';
+import lineIcon from '../assets/images/contacts/line.svg';
 
 export const contactData = [
     { 

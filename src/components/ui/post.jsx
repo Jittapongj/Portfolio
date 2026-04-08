@@ -1,4 +1,4 @@
-import PlaceholderImage from '../../assets/images/placeholder.png';
+import PlaceholderImage from '../../assets/images/projects/placeholder.png';
 import '../../styles/ui/post.scss';
 
 const Post = ({ project, onBack }) => {

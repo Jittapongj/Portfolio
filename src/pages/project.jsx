@@ -1,6 +1,6 @@
 // src/pages/project.jsx
 import { useState } from 'react';
-import PlaceholderImage from '../assets/images/placeholder.png';
+import PlaceholderImage from '../assets/images/projects/placeholder.png';
 import { ProjectCard } from '../components/ui/card';
 import Post from '../components/ui/post';
 import { projectData } from '../data/projects';
