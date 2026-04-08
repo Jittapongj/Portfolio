@@ -1,6 +1,6 @@
-import FindmateImage from '../assets/images/project-pic.png';
-import CMSImage from '../assets/images/news-dashboard.png';
-import PortfolioImage from '../assets/images/portfolio-pic.png';
+import FindmateImage from '../assets/images/projects/project-pic.png';
+import CMSImage from '../assets/images/projects/news-dashboard.png';
+import PortfolioImage from '../assets/images/projects/portfolio-pic.png';
 // import FindmateStructure from '../assets/images/findmate-structure.png';
 // import CMSStructure from '../assets/images/cms-structure.png';
 

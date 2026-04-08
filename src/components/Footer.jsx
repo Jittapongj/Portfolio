@@ -1,6 +1,6 @@
 import "../styles/footer.scss"
-import GithubImg from '../assets/images/github.png'
-import LinkedinImg from '../assets/images/linkedin.png'
+import GithubImg from '../assets/images/contacts/github.svg'
+import LinkedinImg from '../assets/images/contacts/linkedin.svg'
 
 function Footer() {
     return (

@@ -1,10 +1,10 @@
 import profileImg from '../assets/images/Jittapong-removebg.png'
 import '../styles/home.scss'
 import '../styles/ui/button.scss'
-import LineIcon from '../assets/images/line.png'
-import LinkedinImg from '../assets/images/linkedin.png'
-import facebookIcon from '../assets/images/facebook.png';
-import instagramIcon from '../assets/images/instagram.png';
+import LineIcon from '../assets/images/contacts/line.svg'
+import LinkedinImg from '../assets/images/contacts/linkedin.svg'
+import facebookIcon from '../assets/images/contacts/facebook.svg';
+import instagramIcon from '../assets/images/contacts/instagram.svg';
 
 function Home({ setActivePage }) {
     return (
