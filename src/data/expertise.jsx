@@ -1,22 +1,22 @@
-import { Smartphone, CodeXml, Rocket } from "lucide-react";
+import { MonitorSmartphone, CodeXml, Users } from "lucide-react";
 
 export const expertiseData = [
   {
     id: 1,
     title: "Modern & Responsive UI",
-    description: "ออกแบบและพัฒนาหน้าเว็บด้วย React และ Tailwind CSS โดยยึดหลัก Mobile-First เพื่อให้มั่นใจว่าผู้ใช้งานจะได้รับประสบการณ์ที่ดีที่สุดในทุกขนาดหน้าจอ",
-    icon: <Smartphone/>
+    description: "Designing and developing web applications using React and Tailwind CSS with a strong emphasis on Mobile-First principles, ensuring seamless and optimized user experiences across all devices.",
+    icon: <MonitorSmartphone />
   },
   {
     id: 2,
     title: "Clean Code & Best Practices",
-    description: "ให้ความสำคัญกับโครงสร้างโค้ดที่อ่านง่าย บำรุงรักษาง่าย พร้อมจัดการเวอร์ชันด้วย Git",
-    icon: <CodeXml/>
+    description: "Committed to writing clean, readable, and highly maintainable code. Proficient in utilizing Git for effective version control and structured development workflows.",
+    icon: <CodeXml />
   },
   {
     id: 3,
     title: "Team Collaboration",
-    description: "มีประสบการณ์ทำงานร่วมกับทีมและรุ่นพี่อย่างราบรื่น เปิดรับฟัง Feedback เพื่อนำมาพัฒนาตนเองและงานให้ดีขึ้น",
-    icon: <Rocket/>
+    description: "Experienced in collaborating effectively with teams and senior developers. I actively embrace constructive feedback to continuously improve my skills and deliver high-quality results.",
+    icon: <Users />
   }
 ];
