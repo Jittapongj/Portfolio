@@ -8,6 +8,7 @@ import LineIcon from '../assets/images/contacts/line.svg'
 import LinkedinImg from '../assets/images/contacts/linkedin.svg'
 import facebookIcon from '../assets/images/contacts/facebook.svg';
 import instagramIcon from '../assets/images/contacts/instagram.svg';
+import { FileText, Mail } from 'lucide-react';
 import { ProjectCard } from '../components/ui/card';
 
 function Home({ setActivePage }) {
@@ -36,12 +37,21 @@ function Home({ setActivePage }) {
                     </div>
                 </div>
                 <div className="content-info">
+                    <span className="text-blue-400 font-medium tracking-wider mb-2 uppercase text-sm">Welcome to my portfolio</span>
                     <h1 className='flex justify-center sm:justify-start mb-2'>Jittapong Jongjai</h1>
-                    <h3 className='flex justify-center sm:justify-start'>I'm a Front-end Developer</h3>
-                    <p> Hi, I'm Jittapong Jongjai, I'm a 24-year-old Computer Engineering graduate from Rajamangala University of Technology Lanna, Chiang Mai.
+                    <h3 className='flex justify-center sm:justify-start'>Junior Front-end Developer</h3>
+                    <p> Hi, I'm Jittapong Jongjai (Toon), I'm a 24-year-old Computer Engineering graduate from Rajamangala University of Technology Lanna, Chiang Mai.
                         As a Front-end Developer driven by a passion for web development, I focus on bridging the gap between design and functionality
                         through creativity and adaptability. I am committed to continuous learning and building a steady, progressive career in tech.</p>
-                    <div className='btn btn-primary mt-5'>Resume</div>
+                    <div className='flex flex-wrap gap-4 mt-8 justify-center sm:justify-start'>
+                        <a href="mailto:jittapong.j@example.com" className='btn btn-primary inline-flex items-center gap-2'>
+                            <Mail size={20} /> Contact
+                        </a>
+                        <a href="/file/Resume_jittapong.pdf" download="Resume_jittapong.pdf" className='btn btn-primary inline-flex items-center gap-2'>
+                            <FileText size={20} /> Resume
+                        </a>
+                    </div>
+
                 </div>
             </section>
 
@@ -66,14 +76,14 @@ function Home({ setActivePage }) {
 
             <section className="projects-section px-4 py-20">
                 <div className="projects-wrapper">
-                    <Projects/> 
+                    <Projects />
                 </div>
             </section>
 
             <section className="skills-section px-4 py-20">
                 <div className="skills-wrapper">
                     <h2 className="heading text-3xl font-bold text-center mb-12">My Skills</h2>
-                    <Skills/>   
+                    <Skills />
                 </div>
             </section>
         </section>
