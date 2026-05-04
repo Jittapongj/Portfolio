@@ -1,5 +1,6 @@
 .btn {
-    display: inline-block;
+    display: flex;
+    width: fit-content;
     padding: 0.5rem 1rem;
     background-color: $PrimaryColor;
     color: $text-white;
