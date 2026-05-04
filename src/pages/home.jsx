@@ -3,10 +3,12 @@ import '../styles/home.scss'
 import '../styles/ui/button.scss'
 import Skills from '../components/ui/skill';
 import { expertiseData } from '../data/expertise';
+import Projects from '../pages/project'
 import LineIcon from '../assets/images/contacts/line.svg'
 import LinkedinImg from '../assets/images/contacts/linkedin.svg'
 import facebookIcon from '../assets/images/contacts/facebook.svg';
 import instagramIcon from '../assets/images/contacts/instagram.svg';
+import { ProjectCard } from '../components/ui/card';
 
 function Home({ setActivePage }) {
     return (
@@ -59,6 +61,19 @@ function Home({ setActivePage }) {
                             </div>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            <section className="projects-section px-4 py-20">
+                <div className="projects-wrapper">
+                    <Projects/> 
+                </div>
+            </section>
+
+            <section className="skills-section px-4 py-20">
+                <div className="skills-wrapper">
+                    <h2 className="heading text-3xl font-bold text-center mb-12">My Skills</h2>
+                    <Skills/>   
                 </div>
             </section>
         </section>
