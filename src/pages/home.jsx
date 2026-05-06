@@ -44,7 +44,7 @@ function Home() {
                         As a Front-end Developer driven by a passion for web development, I focus on bridging the gap between design and functionality
                         through creativity and adaptability. I am committed to continuous learning and building a steady, progressive career in tech.</p>
                     <div className='flex flex-wrap gap-4 mt-8 justify-center sm:justify-start'>
-                        <a href="mailto:jittapong.j@example.com" className='btn btn-primary inline-flex items-center gap-2'>
+                        <a href="mailto:jittapongj@gmail.com" className='btn btn-primary inline-flex items-center gap-2'>
                             <Mail size={20} /> Contact
                         </a>
                         <a href="/file/Resume_jittapong.pdf" download="Resume_jittapong.pdf" className='btn btn-primary inline-flex items-center gap-2'>
