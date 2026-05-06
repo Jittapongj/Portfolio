@@ -11,7 +11,7 @@ import instagramIcon from '../assets/images/contacts/instagram.svg';
 import { FileText, Mail } from 'lucide-react';
 import { ProjectCard } from '../components/ui/card';
 
-function Home({ setActivePage }) {
+function Home() {
     return (
         <section id="homepage">
             <section id="profile-section" className="px-4 grid grid-cols-1 sm:grid-cols-2 items-center grow w-full animate-fade-in ">
