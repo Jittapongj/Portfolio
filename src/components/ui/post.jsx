@@ -1,13 +1,19 @@
+import { useNavigate } from 'react-router-dom';
 import PlaceholderImage from '../../assets/images/projects/placeholder.png';
 import '../../styles/ui/post.scss';
 
-const Post = ({ project, onBack }) => {
+const Post = ({ project }) => {
+    const navigate = useNavigate();
     if (!project) return null;
+
+    const handleBack = () => {
+        navigate('/projects');
+    };
 
     return (
         <div className="post container mx-auto px-4 max-w-4xl py-4 animate-fade-in">
             <button
-                onClick={onBack}
+                onClick={handleBack}
                 className="btn-back mb-8 flex items-center gap-2"
             >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">

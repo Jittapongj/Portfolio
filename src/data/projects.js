@@ -7,6 +7,7 @@ import PortfolioImage from '../assets/images/projects/portfolio-pic.png';
 export const projectData = [
   {
     id: 1,
+    slug: "web-application-roommate-finder-with-k-nn",
     title: "Web Application Roommate Finder with K-NN",
     description: "โปรเจกต์นี้เป็น Web Application ที่ช่วยให้นักศึกษาสามารถค้นหาเพื่อนร่วมหอพักที่มีไลฟ์สไตล์ตรงกัน โดยนำอัลกอริทึม K-Nearest Neighbors (K-NN) มาช่วยในการจับคู่ (Matching) จากแบบสอบถามความสนใจและพฤติกรรมการใช้ชีวิต",
     image: FindmateImage,
@@ -16,6 +17,7 @@ export const projectData = [
   },
   {
     id: 2,
+    slug: "cms-news-management-system",
     title: "CMS News Management System",
     description: "ระบบ Content Management System (CMS) สำหรับจัดการบทความและข่าวสาร มีระบบหลังบ้าน (Admin Panel) สำหรับเพิ่ม ลบ แก้ไข ข่าวสาร และระบบหน้าบ้านสำหรับแสดงผลข่าวสารให้ผู้ใช้งานทั่วไป",
     image: CMSImage,
@@ -25,6 +27,7 @@ export const projectData = [
   },
   {
     id: 3,
+    slug: "portfolio-website",
     title: "Portfolio Website",
     description: "เว็บไซต์ Portfolio พัฒนาด้วย React และ Tailwind CSS เน้นการออกแบบที่เรียบง่าย โหลดเร็ว และรองรับการแสดงผลทุกหน้าจอ (Responsive Design)",
     image: PortfolioImage,
