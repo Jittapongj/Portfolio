@@ -1,9 +1,9 @@
 import profileImg from '../assets/images/Jittapong-removebg.png'
 import '../styles/home.scss'
 import '../styles/ui/button.scss'
-import Skills from '../components/ui/skill';
-import { expertiseData } from '../data/expertise';
-import Projects from '../pages/project'
+import Skills from '../components/ui/Skill';
+import ProjectList from '../components/ui/ProjectList';
+import { expertiseData } from '../components/ui/Expertise';
 import LineIcon from '../assets/images/contacts/line.svg'
 import LinkedinImg from '../assets/images/contacts/linkedin.svg'
 import facebookIcon from '../assets/images/contacts/facebook.svg';
@@ -21,16 +21,16 @@ function Home() {
                     <div className='box-social-link absolute flex flex-col items-center gap-2 justify-center'>
                         <div>Social Media Link</div>
                         <div className="flex gap-4">
-                            <a href="https://facebook.com/thiztoon" target="_blank">
+                            <a href="https://facebook.com/thiztoon" target="_blank" rel="noopener noreferrer">
                                 <img src={facebookIcon} alt="Facebook icon" className='social-icon' />
                             </a>
-                            <a href="https://instagram.com/thiztoon" target="_blank">
+                            <a href="https://instagram.com/thiztoon" target="_blank" rel="noopener noreferrer">
                                 <img src={instagramIcon} alt="Instagram icon" className='social-icon' />
                             </a>
-                            <a href="https://line.me/ti/p/szrybb" target="_blank">
+                            <a href="https://line.me/ti/p/szrybb" target="_blank" rel="noopener noreferrer">
                                 <img src={LineIcon} alt="Line icon" className='social-icon' />
                             </a>
-                            <a href="https://linkedin.com/in/jittapong-j" target="_blank">
+                            <a href="https://linkedin.com/in/jittapong-j" target="_blank" rel="noopener noreferrer">
                                 <img src={LinkedinImg} alt="LinkedIn icon" className='social-icon' />
                             </a>
                         </div>
@@ -76,7 +76,8 @@ function Home() {
 
             <section className="projects-section px-4 py-20">
                 <div className="projects-wrapper">
-                    <Projects />
+                    <h2 className="heading text-3xl font-bold text-center mb-12">My Projects</h2>
+                    <ProjectList />
                 </div>
             </section>
 
