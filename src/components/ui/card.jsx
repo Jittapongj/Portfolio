@@ -1,17 +1,17 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../styles/ui/card.scss';
 import PlaceholderImage from '../../assets/images/projects/placeholder.png';
 
 export const ProjectCard = ({ title, description, image, readMoreUrl }) => {
+    const [imgSrc, setImgSrc] = useState(image || PlaceholderImage);
+
     return (
         <div className="card card-project flex flex-col h-full">
             <div className="card-image relative group overflow-hidden">
                 <img
-                    src={image} alt={title} className="w-full h-full object-cover"
-                    onError={(e) => { 
-                        e.target.onerror = null; 
-                        e.target.src = PlaceholderImage; 
-                    }}
+                    src={imgSrc} alt={title} className="w-full h-full object-cover"
+                    onError={() => setImgSrc(PlaceholderImage)}
                 />
                 <div className="absolute"></div>
             </div>
