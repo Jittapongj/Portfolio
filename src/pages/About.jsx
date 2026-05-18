@@ -1,5 +1,5 @@
 import '../styles/about.scss'
-import Skills from '../components/ui/skill';
+import Skills from '../components/ui/Skill';
 
 // สร้าง Component ย่อยเพื่อลดการเขียนโค้ดซ้ำ
 const ResumeSection = ({ title, children }) => (
