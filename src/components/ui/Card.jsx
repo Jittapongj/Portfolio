@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../../styles/ui/card.scss';
+import '../../styles/ui/Card.scss';
 import PlaceholderImage from '../../assets/images/projects/placeholder.png';
 
 export const ProjectCard = ({ title, description, image, readMoreUrl }) => {

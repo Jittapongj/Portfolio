@@ -1,5 +1,5 @@
 import { useParams, Navigate } from 'react-router-dom';
-import Post from '../components/ui/post';
+import Post from '../components/ui/Post';
 import { projectData } from '../data/projects';
 
 const ProjectPost = () => {

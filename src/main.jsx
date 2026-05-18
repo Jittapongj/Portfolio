@@ -7,7 +7,7 @@ import About from './pages/About.jsx';
 import Projects from './pages/Projects.jsx'; // เปลี่ยน Project เป็น Projects
 import ProjectPost from './pages/ProjectPost.jsx';
 import Contact from './pages/Contact.jsx';
-import './index.css'
+import './styles/tailwind.css';
 import './styles/main.scss'
 
 const router = createBrowserRouter([
