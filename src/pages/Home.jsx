@@ -3,7 +3,7 @@ import '../styles/home.scss'
 import '../styles/ui/button.scss'
 import Skills from '../components/ui/Skill';
 import ProjectList from '../components/ui/ProjectList';
-import { expertiseData } from '../data/expertise';
+import { expertiseData } from '../components/ui/Expertise';
 import LineIcon from '../assets/images/contacts/line.svg'
 import LinkedinImg from '../assets/images/contacts/linkedin.svg'
 import facebookIcon from '../assets/images/contacts/facebook.svg';
