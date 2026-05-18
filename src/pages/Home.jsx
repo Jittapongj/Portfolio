@@ -9,7 +9,7 @@ import LinkedinImg from '../assets/images/contacts/linkedin.svg'
 import facebookIcon from '../assets/images/contacts/facebook.svg';
 import instagramIcon from '../assets/images/contacts/instagram.svg';
 import { FileText, Mail } from 'lucide-react';
-import { ProjectCard } from '../components/ui/card';
+import { ProjectCard } from '../components/ui/Card';
 
 function Home() {
     return (
