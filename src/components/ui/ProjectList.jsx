@@ -1,5 +1,5 @@
 import PlaceholderImage from '../../assets/images/projects/placeholder.png';
-import { ProjectCard } from '../ui/card';
+import { ProjectCard } from '../ui/Card';
 import { projectData } from '../../data/projects';
 
 const ProjectList = () => {

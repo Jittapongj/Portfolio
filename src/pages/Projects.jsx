@@ -1,4 +1,5 @@
 import ProjectList from '../components/ui/ProjectList';
+import { ProjectCard } from '../components/ui/Card';
 
 const Projects = () => {
   return (

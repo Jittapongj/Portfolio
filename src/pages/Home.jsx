@@ -1,7 +1,7 @@
 import profileImg from '../assets/images/Jittapong-removebg.png'
 import '../styles/home.scss'
 import '../styles/ui/button.scss'
-import Skills from '../components/ui/skill';
+import Skills from '../components/ui/Skill';
 import ProjectList from '../components/ui/ProjectList';
 import { expertiseData } from '../data/expertise';
 import LineIcon from '../assets/images/contacts/line.svg'
