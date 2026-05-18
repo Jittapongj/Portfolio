@@ -21,16 +21,16 @@ function Home() {
                     <div className='box-social-link absolute flex flex-col items-center gap-2 justify-center'>
                         <div>Social Media Link</div>
                         <div className="flex gap-4">
-                            <a href="https://facebook.com/thiztoon" target="_blank">
+                            <a href="https://facebook.com/thiztoon" target="_blank" rel="noopener noreferrer">
                                 <img src={facebookIcon} alt="Facebook icon" className='social-icon' />
                             </a>
-                            <a href="https://instagram.com/thiztoon" target="_blank">
+                            <a href="https://instagram.com/thiztoon" target="_blank" rel="noopener noreferrer">
                                 <img src={instagramIcon} alt="Instagram icon" className='social-icon' />
                             </a>
-                            <a href="https://line.me/ti/p/szrybb" target="_blank">
+                            <a href="https://line.me/ti/p/szrybb" target="_blank" rel="noopener noreferrer">
                                 <img src={LineIcon} alt="Line icon" className='social-icon' />
                             </a>
-                            <a href="https://linkedin.com/in/jittapong-j" target="_blank">
+                            <a href="https://linkedin.com/in/jittapong-j" target="_blank" rel="noopener noreferrer">
                                 <img src={LinkedinImg} alt="LinkedIn icon" className='social-icon' />
                             </a>
                         </div>
