@@ -1,5 +1,5 @@
 import { contactData } from '../data/contact';
-import { ContactCard } from '../components/ui/card';
+import { ContactCard } from '../components/ui/Card';
 import '../styles/contact.scss';
 
 const Contact = () => {
