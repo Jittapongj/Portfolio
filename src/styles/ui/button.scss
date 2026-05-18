@@ -43,13 +43,9 @@
     &-readmore {
         background-color: $PrimaryColor;
         color: $text-white;
-        border: 1px solid $BorderColor;
+        border-radius: 0.5rem;
         text-transform: uppercase;
         cursor: pointer;
-
-        &:hover {
-            background-color: $PrimaryHoverColor;
-        }
     }
 
     &-github {
