@@ -2,8 +2,8 @@ import profileImg from '../assets/images/Jittapong-removebg.png'
 import '../styles/home.scss'
 import '../styles/ui/button.scss'
 import Skills from '../components/ui/skill';
+import ProjectList from '../components/ui/ProjectList';
 import { expertiseData } from '../data/expertise';
-import Projects from '../pages/project'
 import LineIcon from '../assets/images/contacts/line.svg'
 import LinkedinImg from '../assets/images/contacts/linkedin.svg'
 import facebookIcon from '../assets/images/contacts/facebook.svg';
@@ -76,7 +76,8 @@ function Home() {
 
             <section className="projects-section px-4 py-20">
                 <div className="projects-wrapper">
-                    <Projects />
+                    <h2 className="heading text-3xl font-bold text-center mb-12">My Projects</h2>
+                    <ProjectList />
                 </div>
             </section>
 

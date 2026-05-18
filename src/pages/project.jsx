@@ -1,7 +1,4 @@
-// src/pages/project.jsx
-import PlaceholderImage from '../assets/images/projects/placeholder.png';
-import { ProjectCard } from '../components/ui/card';
-import { projectData } from '../data/projects';
+import ProjectList from '../components/ui/ProjectList';
 
 const Projects = () => {
   return (
@@ -10,17 +7,7 @@ const Projects = () => {
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 mb-4"> My Projects </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projectData.map((project) => (
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              image={project.image || PlaceholderImage}
-              readMoreUrl={`/projects/${project.slug}`}
-            />
-          ))}
-        </div>
+        <ProjectList />
       </div>
     </section>
   );
