@@ -7,10 +7,10 @@ import PortfolioImage from '../assets/images/projects/portfolio-pic.png';
 export const projectData = [
   {
     id: 1,
-    slug: "Mock Data: Find Mate - Roomate Recommendation",
+    slug: "find-mate-roommate-recommendation",
     title: "Find Mate - Roommate Recommendation",
     description: "Roommate recommendation application using personality-based compatibility matching. Implemented a secure mutual match system with OTP verification and an admin dashboard for user and report management.",
-    date: "18 May 2026", // สามารถเปลี่ยนเป็นวันที่จริงได้
+    date: "18 May 2026", 
     image: FindmateImage,
     overview: "Roommate recommendation application leveraging personality-based compatibility algorithms to enhance user matching accuracy.",
     features: [
@@ -26,13 +26,13 @@ export const projectData = [
     id: 2,
     slug: "cms-news-management-system",
     title: "CMS News Management System",
-    description: "ระบบ Content Management System (CMS) สำหรับจัดการบทความและข่าวสาร มีระบบหลังบ้าน (Admin Panel) สำหรับเพิ่ม ลบ แก้ไข ข่าวสาร และระบบหน้าบ้านสำหรับแสดงผลข่าวสารให้ผู้ใช้งานทั่วไป",
+    description: "A Content Management System (CMS) for managing articles and news. It features a backend (Admin Panel) for adding, editing, and deleting news, along with a frontend system for displaying news to general users.",
     date: "18 May 2026",
-    overview: "ระบบ Content Management System (CMS) สำหรับจัดการบทความและข่าวสาร มีระบบหลังบ้าน (Admin Panel) สำหรับเพิ่ม ลบ แก้ไข ข่าวสาร และระบบหน้าบ้านสำหรับแสดงผลข่าวสารให้ผู้ใช้งานทั่วไป",
+    overview: "A comprehensive CMS for news management, featuring both a secure admin panel for content creation and a user-friendly frontend for public viewing.",
     features: [
       "Responsive Design",
       "High Performance",
-      "Content Management via Data Files"
+      "Content Management System (Admin Panel)"
     ],
     image: CMSImage,
     gitUrl: "https://github.com/Jittapongj/CMS-News",
@@ -41,12 +41,12 @@ export const projectData = [
   },
   {
     id: 3,
-    slug: "Portfolio-Website",
+    slug: "portfolio-website",
     title: "Portfolio Website",
-    description: "เว็บไซต์ Portfolio พัฒนาด้วย React และ Tailwind CSS เน้นการออกแบบที่เรียบง่าย โหลดเร็ว และรองรับการแสดงผลทุกหน้าจอ (Responsive Design)",
-    date: "18 May 2026", // สามารถเปลี่ยนเป็นวันที่จริงได้
+    description: "A portfolio website built with React and Tailwind CSS, featuring a clean design, fast load times, and full responsiveness across all devices.",
+    date: "18 May 2026", 
     image: PortfolioImage,
-    overview: "Create Portfolio Website using React + Tailwind + SCSS with high performance and responsive",
+    overview: "Created a Portfolio Website using React + Tailwind + SCSS, focusing on high performance and responsive design.",
     features: [
       "Responsive Design",
       "High Performance",
@@ -55,17 +55,16 @@ export const projectData = [
     gitUrl: "https://github.com/Jittapongj/Portfolio",
     tools: ["React", "Tailwind CSS", "SCSS"],
     structure: `src/
-├── assets/                 # ทรัพยากรที่ใช้ในโปรเจกต์
-│   └── images/             # รูปภาพโปรไฟล์และรูปภาพประกอบทั่วไป
-├── components/             # ส่วนประกอบของ UI ที่นำกลับมาใช้ใหม่ได้
-│   ├── ui/                 # Small Components (Card, Post, Skills, Button)
-│   ├── Nav.jsx             # แถบเมนูนำทางหลัก
-│   └── Footer.jsx          # ส่วนท้ายของเว็บไซต์
-├── data/                   # ไฟล์ JSON/JS สำหรับจัดการเนื้อหา (Content Management)
-├── pages/                  # ส่วนแสดงผลหลักของแต่ละหน้า
-├── styles/                 # การจัดการสไตล์ทั้งหมดด้วย SCSS และ Tailwind
-│   └── ui/                 # สไตล์เฉพาะของแต่ละ UI Component
-├── App.jsx                 # ไฟล์หลักที่รวม Layout และ Logic เริ่มต้น
-└── main.jsx                # จุดเชื่อมต่อ React เข้ากับ HTML DOM`
+├── assets/                 # Media assets (images, icons, fonts)
+├── components/             # Reusable React components
+│   ├── ui/                 # Small UI pieces (Card, Button, Post, Skill)
+│   ├── Nav.jsx             # Main navigation bar
+│   └── Footer.jsx          # Website footer
+├── data/                   # Static mock data & configurations
+├── pages/                  # Main route components (Home, About, Projects)
+├── styles/                 # Global styling and SCSS architecture
+│   └── ui/                 # Specific styles for each UI component
+├── App.jsx                 # Root component and Router configuration
+└── main.jsx                # Application entry point`
   }
 ];

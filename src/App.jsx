@@ -6,7 +6,7 @@ function App() {
   return (
     <div id='Main-Layout' className='flex flex-col min-h-screen'>
       <Nav />
-      <main className='main-content flex justify-center grow mx-auto lg:px-16 w-full'>
+      <main className='main-content'>
         <Outlet />
       </main>
       <Footer />
