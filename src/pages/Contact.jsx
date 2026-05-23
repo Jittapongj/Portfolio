@@ -5,7 +5,7 @@ import '../styles/contact.scss';
 const Contact = () => {
   return (
     <section id='contact' className="min-h-screen animate-fade-in">
-      <div className="container mx-auto">
+      <div className="py-6 px-4 max-w-7xl mx-auto">
         <div className="">
           <h1 className="mb-4">Get In Touch</h1>
           <p className="">Feel free to contact me via any of these channels.</p>

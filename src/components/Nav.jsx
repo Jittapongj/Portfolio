@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const menuItems = [
     { name: 'Home', value: 'home' },
-    { name: 'About', value: 'about' },
+    // { name: 'About', value: 'about' },
     { name: 'Projects', value: 'projects' },
     { name: 'Contact', value: 'contact' }
   ];

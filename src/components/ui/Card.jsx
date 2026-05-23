@@ -19,10 +19,8 @@ export const ProjectCard = ({ title, description, image, readMoreUrl }) => {
                 <h3 className="title text-xl font-bold" title={title}>{title}</h3>
                 <p className="des text-sm mb-4 line-clamp-3">{description}</p>
                 <div className="readmore flex justify-center items-center gap-3 mt-auto pt-4">
-                    <Link
-                        to={readMoreUrl}
-                        className="btn-readmore text-sm px-4 py-2"
-                    > 
+                    <div> </div>
+                    <Link to={readMoreUrl} className="btn-readmore text-sm px-4 py-2"> 
                         Read More 
                     </Link>
                 </div>
